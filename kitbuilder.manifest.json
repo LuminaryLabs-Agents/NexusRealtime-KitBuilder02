@@ -1,0 +1,21 @@
+{
+  "source": "NexusRealtime-KitBuilder02",
+  "version": "0.1.0",
+  "kits": {
+    "peerjs-room-kit": {
+      "path": "kits/peerjs-room-kit/src/index.js",
+      "version": "0.1.0",
+      "exports": ["PeerJsRoomKit", "PeerRoom", "validateRoomId", "validatePacketEnvelope"]
+    },
+    "peerjs-hostlayer-kit": {
+      "path": "kits/peerjs-hostlayer-kit/src/index.js",
+      "version": "0.1.0",
+      "exports": ["PeerJsHostLayerKit", "HostLayer", "RouteTable", "validateRouteOffer"]
+    },
+    "secure-peer-onnx-kit": {
+      "path": "kits/secure-peer-onnx-kit/src/index.js",
+      "version": "0.1.0",
+      "exports": ["SecurePeerOnnxKit", "SecurePeerOnnxMesh", "loadStartupModels", "validateModelManifest"]
+    }
+  }
+}

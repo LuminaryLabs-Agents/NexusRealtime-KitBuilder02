@@ -1,0 +1,20 @@
+{
+  "name": "nexusrealtime-kitbuilder02",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Custom kit build lab for NexusRealtime peer rooms, host layers, and secure ONNX orchestration.",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "smoke": "node apps/fabric-lab/src/main.js"
+  },
+  "keywords": [
+    "nexusrealtime",
+    "peerjs",
+    "webrtc",
+    "onnx",
+    "agent-mesh",
+    "protokit"
+  ],
+  "license": "MIT"
+}
