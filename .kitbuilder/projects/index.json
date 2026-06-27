@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-26T00:00:00.000Z",
+  "generatedAt": "2026-06-27T00:00:00.000Z",
   "totalStates": 20,
   "projects": [
-    { "kitId": "peerjs-room-kit", "state": "implementation_complete", "stateIndex": 11, "totalStates": 20, "status": "experimental", "kind": "browser-runtime" },
-    { "kitId": "peerjs-hostlayer-kit", "state": "implementation_complete", "stateIndex": 11, "totalStates": 20, "status": "experimental", "kind": "browser-runtime" },
-    { "kitId": "secure-peer-onnx-kit", "state": "implementation_complete", "stateIndex": 11, "totalStates": 20, "status": "experimental", "kind": "browser-runtime" },
-    { "kitId": "live-server-kit", "state": "implementation_complete", "stateIndex": 11, "totalStates": 20, "status": "experimental", "kind": "server-kit" },
-    { "kitId": "cloudflare-tunnel-kit", "state": "implementation_complete", "stateIndex": 11, "totalStates": 20, "status": "experimental", "kind": "node-tool" }
+    { "kitId": "peerjs-room-kit", "state": "example_3_live_or_edge", "stateIndex": 16, "totalStates": 20, "status": "experimental", "kind": "browser-runtime" },
+    { "kitId": "peerjs-hostlayer-kit", "state": "example_3_live_or_edge", "stateIndex": 16, "totalStates": 20, "status": "experimental", "kind": "browser-runtime" },
+    { "kitId": "secure-peer-onnx-kit", "state": "example_3_live_or_edge", "stateIndex": 16, "totalStates": 20, "status": "experimental", "kind": "browser-runtime" },
+    { "kitId": "live-server-kit", "state": "example_3_live_or_edge", "stateIndex": 16, "totalStates": 20, "status": "experimental", "kind": "server-kit" },
+    { "kitId": "cloudflare-tunnel-kit", "state": "example_3_live_or_edge", "stateIndex": 16, "totalStates": 20, "status": "experimental", "kind": "node-tool" }
   ]
 }
