@@ -1,6 +1,6 @@
 {
   "source": "NexusRealtime-KitBuilder02",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "kits": {
     "peerjs-room-kit": {
       "path": "kits/peerjs-room-kit/src/index.js",
@@ -16,6 +16,16 @@
       "path": "kits/secure-peer-onnx-kit/src/index.js",
       "version": "0.1.0",
       "exports": ["SecurePeerOnnxKit", "SecurePeerOnnxMesh", "loadStartupModels", "validateModelManifest"]
+    },
+    "live-server-kit": {
+      "path": "kits/live-server-kit/src/index.js",
+      "version": "0.1.0",
+      "exports": ["LiveServer", "createLiveServer", "LiveServerClient", "InMemoryLiveStore"]
+    },
+    "cloudflare-tunnel-kit": {
+      "path": "kits/cloudflare-tunnel-kit/src/index.js",
+      "version": "0.1.0",
+      "exports": ["resolveCloudflared", "parseCloudflaredTunnelUrl", "toPublicWsUrl", "writeRuntimeManifest", "startQuickTunnel"]
     }
   }
 }
