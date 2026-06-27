@@ -1,18 +1,24 @@
 {
   "name": "nexusrealtime-kitbuilder02",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "description": "Custom kit build lab for NexusRealtime peer rooms, host layers, and secure ONNX orchestration.",
+  "description": "Custom kit build lab for NexusRealtime peer rooms, host layers, live mirrors, Cloudflare tunnels, and secure ONNX orchestration.",
   "scripts": {
     "test": "node --test tests/*.test.js",
-    "smoke": "node apps/fabric-lab/src/main.js"
+    "smoke": "node apps/fabric-lab/src/main.js",
+    "live:server": "node kits/live-server-kit/bin/start-server.js --port 8787",
+    "live:tunnel": "node kits/cloudflare-tunnel-kit/bin/start-quick-tunnel.js --url http://127.0.0.1:8787",
+    "live:fabric": "node apps/live-fabric-runner/start.js",
+    "live:doctor": "node apps/live-fabric-runner/doctor.js"
   },
   "keywords": [
     "nexusrealtime",
     "peerjs",
     "webrtc",
     "onnx",
+    "cloudflare-tunnel",
+    "live-server",
     "agent-mesh",
     "protokit"
   ],
