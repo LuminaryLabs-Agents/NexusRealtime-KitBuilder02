@@ -1,0 +1,12 @@
+{
+  "issueId": "kb-seed-add-three-examples",
+  "title": "Add the three required examples to every existing kit",
+  "body": "All current kits now include local-basic, hosted-integration, and live-or-edge examples.",
+  "kitId": null,
+  "severity": "normal",
+  "tags": ["examples", "lifecycle", "quality-gate"],
+  "status": "closed",
+  "createdAt": "2026-06-26T00:00:00.000Z",
+  "updatedAt": "2026-06-27T00:00:00.000Z",
+  "lessons": ["lesson-seed-three-examples"]
+}
