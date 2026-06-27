@@ -1,29 +1,50 @@
 {
   "source": "NexusRealtime-KitBuilder02",
-  "version": "0.2.0",
+  "version": "0.3.0",
+  "lifecycle": {
+    "statesPath": ".kitbuilder/lifecycle/states.json",
+    "projectIndexPath": ".kitbuilder/projects/index.json",
+    "requiredExamples": ["local-basic", "hosted-integration", "live-or-edge"],
+    "totalStates": 20
+  },
+  "agentBrain": {
+    "lessonsPath": ".kitbuilder/agent-brain/lessons.jsonl",
+    "summaryPath": ".kitbuilder/agent-brain/main-agent-brain.md",
+    "issuePath": ".kitbuilder/issues"
+  },
   "kits": {
     "peerjs-room-kit": {
       "path": "kits/peerjs-room-kit/src/index.js",
+      "projectPath": ".kitbuilder/projects/peerjs-room-kit/kit.project.json",
+      "manifestPath": "kits/peerjs-room-kit/kit.manifest.json",
       "version": "0.1.0",
       "exports": ["PeerJsRoomKit", "PeerRoom", "validateRoomId", "validatePacketEnvelope"]
     },
     "peerjs-hostlayer-kit": {
       "path": "kits/peerjs-hostlayer-kit/src/index.js",
+      "projectPath": ".kitbuilder/projects/peerjs-hostlayer-kit/kit.project.json",
+      "manifestPath": "kits/peerjs-hostlayer-kit/kit.manifest.json",
       "version": "0.1.0",
       "exports": ["PeerJsHostLayerKit", "HostLayer", "RouteTable", "validateRouteOffer"]
     },
     "secure-peer-onnx-kit": {
       "path": "kits/secure-peer-onnx-kit/src/index.js",
+      "projectPath": ".kitbuilder/projects/secure-peer-onnx-kit/kit.project.json",
+      "manifestPath": "kits/secure-peer-onnx-kit/kit.manifest.json",
       "version": "0.1.0",
       "exports": ["SecurePeerOnnxKit", "SecurePeerOnnxMesh", "loadStartupModels", "validateModelManifest"]
     },
     "live-server-kit": {
       "path": "kits/live-server-kit/src/index.js",
+      "projectPath": ".kitbuilder/projects/live-server-kit/kit.project.json",
+      "manifestPath": "kits/live-server-kit/kit.manifest.json",
       "version": "0.1.0",
       "exports": ["LiveServer", "createLiveServer", "LiveServerClient", "InMemoryLiveStore"]
     },
     "cloudflare-tunnel-kit": {
       "path": "kits/cloudflare-tunnel-kit/src/index.js",
+      "projectPath": ".kitbuilder/projects/cloudflare-tunnel-kit/kit.project.json",
+      "manifestPath": "kits/cloudflare-tunnel-kit/kit.manifest.json",
       "version": "0.1.0",
       "exports": ["resolveCloudflared", "parseCloudflaredTunnelUrl", "toPublicWsUrl", "writeRuntimeManifest", "startQuickTunnel"]
     }
