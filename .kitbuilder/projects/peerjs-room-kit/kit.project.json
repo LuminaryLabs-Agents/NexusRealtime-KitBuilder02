@@ -1,0 +1,22 @@
+{
+  "kitId": "peerjs-room-kit",
+  "title": "PeerJS Room Kit",
+  "currentState": "implementation_complete",
+  "stateIndex": 11,
+  "totalStates": 20,
+  "status": "experimental",
+  "kind": "browser-runtime",
+  "owner": "agent",
+  "createdAt": "2026-06-26T00:00:00.000Z",
+  "updatedAt": "2026-06-26T00:00:00.000Z",
+  "artifacts": {
+    "idea": "kits/peerjs-room-kit/idea.md",
+    "manifest": "kits/peerjs-room-kit/kit.manifest.json",
+    "readme": "kits/peerjs-room-kit/README.md",
+    "api": "kits/peerjs-room-kit/API.md",
+    "risk": "kits/peerjs-room-kit/RISK.md",
+    "examples": []
+  },
+  "gates": { "hasThreeExamples": false, "promotionReady": false },
+  "history": [{ "state": "implementation_complete", "at": "2026-06-26T00:00:00.000Z", "note": "Seeded lifecycle project record." }]
+}
