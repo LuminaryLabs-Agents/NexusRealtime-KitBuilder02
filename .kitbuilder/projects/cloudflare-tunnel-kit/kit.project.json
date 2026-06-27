@@ -1,0 +1,14 @@
+{
+  "kitId": "cloudflare-tunnel-kit",
+  "title": "Cloudflare Tunnel Kit",
+  "currentState": "implementation_complete",
+  "stateIndex": 11,
+  "totalStates": 20,
+  "status": "experimental",
+  "kind": "node-tool",
+  "owner": "agent",
+  "createdAt": "2026-06-26T00:00:00.000Z",
+  "updatedAt": "2026-06-26T00:00:00.000Z",
+  "gates": { "hasThreeExamples": false, "promotionReady": false },
+  "history": []
+}
