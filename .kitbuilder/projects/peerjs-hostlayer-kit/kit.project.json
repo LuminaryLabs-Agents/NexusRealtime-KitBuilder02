@@ -1,22 +1,29 @@
 {
   "kitId": "peerjs-hostlayer-kit",
   "title": "PeerJS Hostlayer Kit",
-  "currentState": "implementation_complete",
-  "stateIndex": 11,
+  "currentState": "example_3_live_or_edge",
+  "stateIndex": 16,
   "totalStates": 20,
   "status": "experimental",
   "kind": "browser-runtime",
   "owner": "agent",
   "createdAt": "2026-06-26T00:00:00.000Z",
-  "updatedAt": "2026-06-26T00:00:00.000Z",
+  "updatedAt": "2026-06-27T00:00:00.000Z",
   "artifacts": {
     "idea": "kits/peerjs-hostlayer-kit/idea.md",
     "manifest": "kits/peerjs-hostlayer-kit/kit.manifest.json",
     "readme": "kits/peerjs-hostlayer-kit/README.md",
     "api": "kits/peerjs-hostlayer-kit/API.md",
     "risk": "kits/peerjs-hostlayer-kit/RISK.md",
-    "examples": []
+    "examples": [
+      "kits/peerjs-hostlayer-kit/examples/local-basic",
+      "kits/peerjs-hostlayer-kit/examples/hosted-integration",
+      "kits/peerjs-hostlayer-kit/examples/live-or-edge"
+    ]
   },
-  "gates": { "hasThreeExamples": false, "promotionReady": false },
-  "history": [{ "state": "implementation_complete", "at": "2026-06-26T00:00:00.000Z", "note": "Seeded lifecycle project record." }]
+  "gates": { "hasThreeExamples": true, "promotionReady": false },
+  "history": [
+    { "state": "implementation_complete", "at": "2026-06-26T00:00:00.000Z", "note": "Seeded lifecycle project record." },
+    { "state": "example_3_live_or_edge", "at": "2026-06-27T00:00:00.000Z", "note": "Added all three required examples." }
+  ]
 }
