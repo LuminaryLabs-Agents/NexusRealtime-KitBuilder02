@@ -1,0 +1,22 @@
+{
+  "id": "peerjs-room-kit",
+  "name": "PeerJS Room Kit",
+  "version": "0.1.0",
+  "kind": "browser-runtime",
+  "status": "experimental",
+  "entry": "src/index.js",
+  "exports": ["PeerJsRoomKit", "PeerRoom", "validateRoomId", "validatePacketEnvelope"],
+  "browserSafe": true,
+  "nodeSafe": true,
+  "requires": [],
+  "lifecycle": {
+    "currentState": "implementation_complete",
+    "stateIndex": 11,
+    "totalStates": 20,
+    "requiredExamples": 3,
+    "completedExamples": 0,
+    "promotionReady": false
+  },
+  "examples": [],
+  "tests": ["tests/room-kit.test.js"]
+}
