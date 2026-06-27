@@ -1,6 +1,6 @@
 # NexusRealtime KitBuilder02
 
-KitBuilder02 is the build lab for NexusRealtime custom browser kits.
+KitBuilder02 is the build lab and kit factory for NexusRealtime custom browser kits.
 
 This repository contains the implementation scaffold for a layered browser peer fabric:
 
@@ -11,6 +11,51 @@ This repository contains the implementation scaffold for a layered browser peer 
 - `cloudflare-tunnel-kit` — `cloudflared` quick tunnel process wrapper that exposes the live server and writes `.runtime/tunnel.json`.
 
 The implementation is intentionally transport-adapter based. The kits can run in tests without real PeerJS, while NexusRealtime can inject real PeerJS/WebRTC adapters at runtime.
+
+## Kit factory lifecycle
+
+KitBuilder02 tracks kits through a 20-stage lifecycle from `idea_captured` to `promotion_ready`.
+
+Machine-readable state is stored in:
+
+```txt
+.kitbuilder/lifecycle/states.json
+.kitbuilder/projects/<kit-id>/kit.project.json
+.kitbuilder/projects/index.json
+```
+
+Lifecycle commands:
+
+```bash
+npm run kit:state
+npm run kit:advance -- --id <kit-id>
+npm run kit:examples
+npm run kit:check
+npm run kit:registry
+npm run kit:doctor
+```
+
+Create a new kit from an idea:
+
+```bash
+npm run kit:intake -- --id vector-cache-kit --title "Vector Cache Kit" --kind browser-runtime
+```
+
+## Local issue tracker and agent memory
+
+Create a local KitBuilder issue:
+
+```bash
+npm run kit:issue -- new --title "Missing live example" --kit secure-peer-onnx-kit --severity normal --tags docs,examples
+```
+
+Close it and add a lesson:
+
+```bash
+npm run kit:issue -- close --id <issue-id> --lesson "Every promoted kit needs a live-or-edge example."
+```
+
+Lessons are stored in `.kitbuilder/agent-brain/lessons.jsonl` and summarized in `.kitbuilder/agent-brain/main-agent-brain.md`.
 
 ## Reliability contract
 
@@ -39,6 +84,11 @@ Fail closed before guessing.
 ## Repository layout
 
 ```txt
+.kitbuilder/
+  lifecycle/
+  projects/
+  issues/
+  agent-brain/
 kits/
   peerjs-room-kit/
   peerjs-hostlayer-kit/
@@ -70,21 +120,9 @@ npm run smoke
 
 ## Live fabric runner
 
-Start the local mirror server only:
-
 ```bash
 npm run live:server
-```
-
-Start a Cloudflare quick tunnel to an already-running server:
-
-```bash
 npm run live:tunnel
-```
-
-Start the server and spawn the tunnel together:
-
-```bash
 npm run live:fabric
 ```
 
@@ -98,29 +136,3 @@ Runtime manifests are written to:
 ```
 
 `publicWsUrl` in `.runtime/tunnel.json` is the remote browser entrypoint for the mirrored mesh.
-
-## Example
-
-```js
-import { PeerJsRoomKit } from './kits/peerjs-room-kit/src/index.js';
-import { PeerJsHostLayerKit } from './kits/peerjs-hostlayer-kit/src/index.js';
-import { SecurePeerOnnxKit } from './kits/secure-peer-onnx-kit/src/index.js';
-
-const room = await PeerJsRoomKit.join({
-  roomId: 'room/root',
-  identity: { identityKey: 'did:key:local-controller' },
-  capabilities: { maxJobs: 2, models: [] }
-});
-
-const hostlayer = PeerJsHostLayerKit.create({
-  parentRoom: room,
-  childRooms: ['room/model/embed-mini-v1/shard/0001']
-});
-
-const mesh = await SecurePeerOnnxKit.join({
-  roomFabric: hostlayer,
-  identity: { identityKey: 'did:key:local-controller' },
-  modelManifests: [],
-  startupModels: { count: 0 }
-});
-```
