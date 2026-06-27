@@ -1,0 +1,22 @@
+{
+  "id": "live-server-kit",
+  "name": "Live Server Kit",
+  "version": "0.1.0",
+  "kind": "server-kit",
+  "status": "experimental",
+  "entry": "src/index.js",
+  "exports": ["LiveServer", "createLiveServer", "LiveServerClient", "InMemoryLiveStore"],
+  "browserSafe": false,
+  "nodeSafe": true,
+  "requires": [],
+  "lifecycle": {
+    "currentState": "implementation_complete",
+    "stateIndex": 11,
+    "totalStates": 20,
+    "requiredExamples": 3,
+    "completedExamples": 0,
+    "promotionReady": false
+  },
+  "examples": [],
+  "tests": ["tests/live-server-kit.test.js"]
+}
