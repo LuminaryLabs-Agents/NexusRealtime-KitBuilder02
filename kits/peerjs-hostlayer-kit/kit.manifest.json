@@ -1,0 +1,22 @@
+{
+  "id": "peerjs-hostlayer-kit",
+  "name": "PeerJS Hostlayer Kit",
+  "version": "0.1.0",
+  "kind": "browser-runtime",
+  "status": "experimental",
+  "entry": "src/index.js",
+  "exports": ["PeerJsHostLayerKit", "HostLayer", "RouteTable", "validateRouteOffer"],
+  "browserSafe": true,
+  "nodeSafe": true,
+  "requires": ["peerjs-room-kit"],
+  "lifecycle": {
+    "currentState": "implementation_complete",
+    "stateIndex": 11,
+    "totalStates": 20,
+    "requiredExamples": 3,
+    "completedExamples": 0,
+    "promotionReady": false
+  },
+  "examples": [],
+  "tests": ["tests/hostlayer-kit.test.js"]
+}
