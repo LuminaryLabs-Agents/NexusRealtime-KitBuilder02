@@ -1,0 +1,10 @@
+{
+  "name": "nexusrealtime-live-server-kit",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "description": "Local HTTP and WebSocket mirror server for NexusRealtime peer fabric state.",
+  "bin": {
+    "nexus-live-server": "bin/start-server.js"
+  }
+}
