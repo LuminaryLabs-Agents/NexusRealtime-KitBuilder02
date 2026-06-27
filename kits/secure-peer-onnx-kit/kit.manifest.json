@@ -1,10 +1,26 @@
 {
   "id": "secure-peer-onnx-kit",
+  "name": "Secure Peer ONNX Kit",
   "version": "0.1.0",
   "kind": "browser-runtime",
   "status": "experimental",
   "entry": "src/index.js",
   "exports": ["SecurePeerOnnxKit", "SecurePeerOnnxMesh", "loadStartupModels", "validateModelManifest"],
   "browserSafe": true,
-  "nodeSafe": true
+  "nodeSafe": true,
+  "requires": ["peerjs-room-kit", "peerjs-hostlayer-kit"],
+  "lifecycle": {
+    "currentState": "example_3_live_or_edge",
+    "stateIndex": 16,
+    "totalStates": 20,
+    "requiredExamples": 3,
+    "completedExamples": 3,
+    "promotionReady": false
+  },
+  "examples": [
+    { "id": "local-basic", "path": "examples/local-basic", "state": "complete" },
+    { "id": "hosted-integration", "path": "examples/hosted-integration", "state": "complete" },
+    { "id": "live-or-edge", "path": "examples/live-or-edge", "state": "complete" }
+  ],
+  "tests": ["tests/onnx-startup.test.js", "tests/onnx-job-result.test.js"]
 }
