@@ -1,14 +1,23 @@
 {
   "kitId": "cloudflare-tunnel-kit",
   "title": "Cloudflare Tunnel Kit",
-  "currentState": "implementation_complete",
-  "stateIndex": 11,
+  "currentState": "example_3_live_or_edge",
+  "stateIndex": 16,
   "totalStates": 20,
   "status": "experimental",
   "kind": "node-tool",
   "owner": "agent",
   "createdAt": "2026-06-26T00:00:00.000Z",
-  "updatedAt": "2026-06-26T00:00:00.000Z",
-  "gates": { "hasThreeExamples": false, "promotionReady": false },
-  "history": []
+  "updatedAt": "2026-06-27T00:00:00.000Z",
+  "artifacts": {
+    "examples": [
+      "kits/cloudflare-tunnel-kit/examples/local-basic",
+      "kits/cloudflare-tunnel-kit/examples/hosted-integration",
+      "kits/cloudflare-tunnel-kit/examples/live-or-edge"
+    ]
+  },
+  "gates": { "hasThreeExamples": true, "promotionReady": false },
+  "history": [
+    { "state": "example_3_live_or_edge", "at": "2026-06-27T00:00:00.000Z", "note": "Added all three required examples." }
+  ]
 }
