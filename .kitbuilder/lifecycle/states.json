@@ -1,0 +1,26 @@
+{
+  "totalStates": 20,
+  "states": [
+    { "id": "idea_captured", "index": 1, "category": "ideation", "requiredArtifact": "kits/<kit-id>/idea.md" },
+    { "id": "idea_normalized", "index": 2, "category": "ideation", "requiredArtifact": ".kitbuilder/projects/<kit-id>/brief.md" },
+    { "id": "domain_classified", "index": 3, "category": "ideation", "requiredArtifact": "kind/browserSafe/nodeSafe" },
+    { "id": "scope_locked", "index": 4, "category": "ideation", "requiredArtifact": "kits/<kit-id>/SCOPE.md" },
+    { "id": "risk_audited", "index": 5, "category": "ideation", "requiredArtifact": "kits/<kit-id>/RISK.md" },
+    { "id": "api_drafted", "index": 6, "category": "design", "requiredArtifact": "kits/<kit-id>/API.md" },
+    { "id": "manifest_seeded", "index": 7, "category": "design", "requiredArtifact": "kits/<kit-id>/kit.manifest.json" },
+    { "id": "scaffold_generated", "index": 8, "category": "design", "requiredArtifact": "standard scaffold" },
+    { "id": "contracts_defined", "index": 9, "category": "design", "requiredArtifact": "contracts/schema/state-machine file" },
+    { "id": "implementation_started", "index": 10, "category": "build", "requiredArtifact": "kits/<kit-id>/src/index.js" },
+    { "id": "implementation_complete", "index": 11, "category": "build", "requiredArtifact": "manifest exports exist in entry" },
+    { "id": "unit_tested", "index": 12, "category": "build", "requiredArtifact": "unit test" },
+    { "id": "integration_tested", "index": 13, "category": "build", "requiredArtifact": "integration test" },
+    { "id": "example_1_local", "index": 14, "category": "proof", "requiredArtifact": "examples/local-basic" },
+    { "id": "example_2_hosted", "index": 15, "category": "proof", "requiredArtifact": "examples/hosted-integration" },
+    { "id": "example_3_live_or_edge", "index": 16, "category": "proof", "requiredArtifact": "examples/live-or-edge" },
+    { "id": "documentation_complete", "index": 17, "category": "proof", "requiredArtifact": "README/API/SCOPE/RISK/example docs" },
+    { "id": "quality_gated", "index": 18, "category": "release", "requiredArtifact": "kit checks and tests" },
+    { "id": "registry_ready", "index": 19, "category": "release", "requiredArtifact": "dist/kitbuilder.registry.json" },
+    { "id": "promotion_ready", "index": 20, "category": "release", "requiredArtifact": ".promotions/<kit-id>/PROMOTION.md" }
+  ],
+  "requiredExamples": ["local-basic", "hosted-integration", "live-or-edge"]
+}
