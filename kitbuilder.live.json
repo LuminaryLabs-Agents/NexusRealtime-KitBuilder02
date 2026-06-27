@@ -1,0 +1,21 @@
+{
+  "runtimeDir": ".runtime",
+  "liveServer": {
+    "host": "127.0.0.1",
+    "port": 8787,
+    "rooms": ["room/root", "room/model/embed-mini-v1"]
+  },
+  "tunnel": {
+    "provider": "cloudflare",
+    "mode": "quick",
+    "localUrl": "http://127.0.0.1:8787",
+    "enabled": true,
+    "restart": true,
+    "maxRestarts": 5
+  },
+  "security": {
+    "requireSignedPackets": false,
+    "requireInviteToken": false,
+    "allowBlobMirror": false
+  }
+}
