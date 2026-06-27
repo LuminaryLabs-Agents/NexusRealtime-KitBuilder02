@@ -1,0 +1,23 @@
+{
+  "id": "cloudflare-tunnel-kit",
+  "name": "Cloudflare Tunnel Kit",
+  "version": "0.1.0",
+  "kind": "node-tool",
+  "status": "experimental",
+  "entry": "src/index.js",
+  "exports": ["resolveCloudflared", "parseCloudflaredTunnelUrl", "toPublicWsUrl", "writeRuntimeManifest", "startQuickTunnel"],
+  "browserSafe": false,
+  "nodeSafe": true,
+  "requires": ["live-server-kit"],
+  "requiresExternalBinary": ["cloudflared"],
+  "lifecycle": {
+    "currentState": "implementation_complete",
+    "stateIndex": 11,
+    "totalStates": 20,
+    "requiredExamples": 3,
+    "completedExamples": 0,
+    "promotionReady": false
+  },
+  "examples": [],
+  "tests": ["tests/cloudflare-tunnel-kit.test.js"]
+}
