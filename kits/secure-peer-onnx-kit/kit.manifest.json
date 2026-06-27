@@ -1,1 +1,10 @@
-{}
+{
+  "id": "secure-peer-onnx-kit",
+  "version": "0.1.0",
+  "kind": "browser-runtime",
+  "status": "experimental",
+  "entry": "src/index.js",
+  "exports": ["SecurePeerOnnxKit", "SecurePeerOnnxMesh", "loadStartupModels", "validateModelManifest"],
+  "browserSafe": true,
+  "nodeSafe": true
+}
