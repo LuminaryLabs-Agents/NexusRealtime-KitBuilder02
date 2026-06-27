@@ -1,0 +1,14 @@
+{
+  "kitId": "live-server-kit",
+  "title": "Live Server Kit",
+  "currentState": "implementation_complete",
+  "stateIndex": 11,
+  "totalStates": 20,
+  "status": "experimental",
+  "kind": "server-kit",
+  "owner": "agent",
+  "createdAt": "2026-06-26T00:00:00.000Z",
+  "updatedAt": "2026-06-26T00:00:00.000Z",
+  "gates": { "hasThreeExamples": false, "promotionReady": false },
+  "history": []
+}
