@@ -1,0 +1,10 @@
+{
+  "name": "nexusrealtime-cloudflare-tunnel-kit",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "description": "Cloudflared quick tunnel process manager for NexusRealtime live fabric runners.",
+  "bin": {
+    "nexus-cloudflare-quick-tunnel": "bin/start-quick-tunnel.js"
+  }
+}
