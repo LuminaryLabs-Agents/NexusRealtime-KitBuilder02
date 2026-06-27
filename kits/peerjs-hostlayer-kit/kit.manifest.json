@@ -10,13 +10,17 @@
   "nodeSafe": true,
   "requires": ["peerjs-room-kit"],
   "lifecycle": {
-    "currentState": "implementation_complete",
-    "stateIndex": 11,
+    "currentState": "example_3_live_or_edge",
+    "stateIndex": 16,
     "totalStates": 20,
     "requiredExamples": 3,
-    "completedExamples": 0,
+    "completedExamples": 3,
     "promotionReady": false
   },
-  "examples": [],
+  "examples": [
+    { "id": "local-basic", "path": "examples/local-basic", "state": "complete" },
+    { "id": "hosted-integration", "path": "examples/hosted-integration", "state": "complete" },
+    { "id": "live-or-edge", "path": "examples/live-or-edge", "state": "complete" }
+  ],
   "tests": ["tests/hostlayer-kit.test.js"]
 }
