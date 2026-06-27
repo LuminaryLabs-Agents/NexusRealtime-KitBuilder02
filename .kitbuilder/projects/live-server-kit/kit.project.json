@@ -1,14 +1,23 @@
 {
   "kitId": "live-server-kit",
   "title": "Live Server Kit",
-  "currentState": "implementation_complete",
-  "stateIndex": 11,
+  "currentState": "example_3_live_or_edge",
+  "stateIndex": 16,
   "totalStates": 20,
   "status": "experimental",
   "kind": "server-kit",
   "owner": "agent",
   "createdAt": "2026-06-26T00:00:00.000Z",
-  "updatedAt": "2026-06-26T00:00:00.000Z",
-  "gates": { "hasThreeExamples": false, "promotionReady": false },
-  "history": []
+  "updatedAt": "2026-06-27T00:00:00.000Z",
+  "artifacts": {
+    "examples": [
+      "kits/live-server-kit/examples/local-basic",
+      "kits/live-server-kit/examples/hosted-integration",
+      "kits/live-server-kit/examples/live-or-edge"
+    ]
+  },
+  "gates": { "hasThreeExamples": true, "promotionReady": false },
+  "history": [
+    { "state": "example_3_live_or_edge", "at": "2026-06-27T00:00:00.000Z", "note": "Added all three required examples." }
+  ]
 }
