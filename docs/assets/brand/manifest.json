@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-07-31T19:25:38.540471+00:00",
+  "project": "NexusRealtime KitBuilder02",
+  "schemaVersion": "repo-image-pack.v1",
+  "settings": {
+    "backgroundColor": "#12263A",
+    "coverResizeMode": "contain-pad-no-crop",
+    "edgeContract": 1,
+    "keyColor": "#FF00FF",
+    "logoPosition": "top-center",
+    "logoSize": 210,
+    "opaqueThreshold": 220.0,
+    "primaryColor": "#2F6BFF",
+    "sourceMode": "chroma",
+    "transparentThreshold": 12.0
+  },
+  "sha256": {
+    "cover-1280x640.png": "5fdb303cd6aa5b1bdad6e6c44a8efff49090384886a1b84037668409d7f6b00d",
+    "cover-source.png": "9997cdedd2e4f0fb5949d4bfbaf97e30c85c9b21e71e2e47d667657fb4e53f21",
+    "logo-1024.png": "bfb5486fc4d47ef6ed7968db8af64d8e496b3118497ea6ac8eda7162e9458cef",
+    "logo-256.png": "6a74a4e364ed2d26efbe072916475131018bde08452c4c16122236bc5ae34d41",
+    "logo-512.png": "a045df0f223f9a59e0a9740e103caf399cfd3bca40fcdfc38026b00878901d35",
+    "logo-mask.png": "862db8cde10121c226204ebaa73f47a2c47747a4dda710a846b39abb2a92516d",
+    "logo-mask.svg": "6a38d34be137b7f264cd6624f60c28bddea6e7e0f4856e6a35a7f51f26cde6cd",
+    "logo-source.png": "dff65b1b301f5438bc8ef10fcfbca0bfa1710ad119ceb483ccb8cee231594313",
+    "logo-transparent.png": "ace7616293c52f7bd36e99b9f711655e1c35537544cbd81275f7c755dd24901a",
+    "social-card.png": "97c781cd609369ea7df90ff02dfda2af50418098e14a63d60f155b7442631cc2"
+  },
+  "source": {
+    "coverFilename": "exec-a808bb04-59c2-4857-a1b3-bc09ad339863.png",
+    "coverSha256": "2c8981fa7818cdd345f8c3739a928e291958e896b74d0a23b7f070c81095a298",
+    "logoFilename": "exec-b4f5c489-d713-450e-ad50-f557dc104ded.png",
+    "logoSha256": "31169ae3877e98f0878523d8da498da212e55f187eb2540e7df306302c5bc8cf"
+  },
+  "summary": "Experimental kit factory for resilient browser peer rooms, routing, secure local model jobs, live mirroring, and optional public tunnels.",
+  "tools": {
+    "chromaHelper": {
+      "name": "imagegen/remove_chroma_key.py",
+      "sha256": "3f7b9b14ad5c90f37618bc1c16a039a2076abca12ddc41b3ae470e2b1cad6c0e"
+    },
+    "ffmpeg": "ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.0.1 Copyright (c) 2007-2025 the FFmpeg developers"
+  },
+  "validation": {
+    "dimensions": {
+      "cover-1280x640.png": [
+        1280,
+        640
+      ],
+      "logo-1024.png": [
+        1024,
+        1024
+      ],
+      "logo-256.png": [
+        256,
+        256
+      ],
+      "logo-512.png": [
+        512,
+        512
+      ],
+      "logo-mask.png": [
+        1254,
+        1254
+      ],
+      "logo-source.png": [
+        1254,
+        1254
+      ],
+      "logo-transparent.png": [
+        1254,
+        1254
+      ],
+      "social-card.png": [
+        1280,
+        640
+      ]
+    },
+    "maskCoverage": 0.360354,
+    "status": "pass",
+    "transparentCornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
